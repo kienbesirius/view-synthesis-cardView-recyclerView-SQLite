@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    app:cardElevation="12dp"
+    app:cardCornerRadius="16dp"
+    android:layout_margin="4dp"
+    android:id="@+id/CardView_Items">
+    <RelativeLayout
+        android:id="@+id/relativeLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <ImageView
+            android:src="@drawable/raiden_shogun_ei"
+            android:scaleType="centerCrop"
+            android:id="@+id/imageVew_avatar"
+            android:background="@drawable/wave__2_"
+            android:layout_width="80dp"
+            android:layout_height="80dp"
+            android:layout_marginStart="5dp"
+            android:layout_marginTop="5dp"
+            android:layout_marginEnd="5dp"
+            android:layout_marginBottom="5dp"
+            android:contentDescription="@string/b_ch_ki_n"
+            />
+
+        <TextView
+            android:id="@+id/textView_NAME"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="8dp"
+            android:layout_alignTop="@+id/imageVew_avatar"
+            android:layout_toEndOf="@id/imageVew_avatar"
+            android:text="@string/h_v_t_n" />
+
+        <TextView
+            android:id="@+id/textView_BIRTH"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/textView_NAME"
+            android:layout_alignStart="@+id/textView_NAME"
+            android:text="@string/ng_y_th_ng_n_m_sinh" />
+
+        <TextView
+            android:id="@+id/textView_UNIVERSITY"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/textView_BIRTH"
+            android:layout_alignStart="@+id/textView_NAME"
+            android:layout_toEndOf="@id/imageVew_avatar"
+            android:text="@string/tr_ng_h_c" />
+
+        <TextView
+            android:id="@+id/textView_SEX"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="16dp"
+            android:layout_alignTop="@+id/textView_NAME"
+            android:layout_alignBottom="@+id/textView_NAME"
+            android:layout_toEndOf="@id/textView_NAME"
+            android:text="@string/gi_i_t_nh" />
+
+        <TextView
+            android:id="@+id/textView_HOBBIES"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/textView_UNIVERSITY"
+            android:layout_alignStart="@+id/textView_NAME"
+            android:layout_alignBottom="@+id/imageVew_avatar"
+            android:text="@string/s_th_ch" />
+    </RelativeLayout>
+
+</androidx.cardview.widget.CardView>

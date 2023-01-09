@@ -1,0 +1,222 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ManagementMainActivity">
+
+    <TextView
+        android:id="@+id/QLSV_TXT"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="30dp"
+        android:gravity="center"
+        android:text="@string/qu_n_l_sinh_vi_n"
+        android:textSize="26sp"
+        app:layout_constraintEnd_toEndOf="@+id/editText_name"
+        app:layout_constraintStart_toStartOf="@+id/textView_name"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/textView_name"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="40dp"
+        android:layout_marginStart="16dp"
+        android:gravity="start"
+        android:tag="Họ Và Tên"
+        android:textSize="19sp"
+        android:textStyle="bold|italic"
+        android:text="@string/h_v_t_n"
+        app:layout_constraintEnd_toStartOf="@id/editText_name"
+        app:layout_constraintHorizontal_weight="1.6"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/QLSV_TXT"
+        app:layout_constraintVertical_chainStyle="spread" />
+
+    <TextView
+        android:id="@+id/textView_birth"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:gravity="start"
+        android:tag="Năm Sinh"
+        android:text="@string/ng_y_th_ng_n_m_sinh"
+        android:textSize="18sp"
+        android:textStyle="bold|italic"
+        app:layout_constraintBottom_toBottomOf="@+id/editText_birth"
+        app:layout_constraintEnd_toStartOf="@+id/editText_birth"
+        app:layout_constraintHorizontal_weight="1.6"
+        app:layout_constraintStart_toStartOf="@+id/textView_name"
+        app:layout_constraintTop_toBottomOf="@+id/editText_name"
+        app:layout_constraintVertical_chainStyle="spread" />
+
+    <TextView
+        android:id="@+id/textView_university"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:gravity="start"
+        android:tag="Trường"
+        android:text="@string/tr_ng_h_c"
+        android:textSize="18sp"
+        android:textStyle="bold|italic"
+        app:layout_constraintBottom_toBottomOf="@+id/editText_university"
+        app:layout_constraintEnd_toStartOf="@id/editText_university"
+        app:layout_constraintHorizontal_weight="1.6"
+        app:layout_constraintStart_toStartOf="@+id/textView_name"
+        app:layout_constraintTop_toTopOf="@+id/editText_university"
+        app:layout_constraintVertical_chainStyle="spread" />
+
+    <TextView
+        android:id="@+id/textView_sex"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:gravity="start"
+        android:tag="Giới Tính"
+        android:text="@string/gi_i_t_nh"
+        android:textSize="19sp"
+        app:layout_constraintEnd_toStartOf="@+id/radioGroup_sex"
+        app:layout_constraintStart_toStartOf="@+id/textView_name"
+        app:layout_constraintTop_toTopOf="@+id/radioGroup_sex" />
+
+    <EditText
+        android:id="@+id/editText_name"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="20dp"
+        android:autofillHints=""
+        android:hint="@string/b_ch_ki_n"
+        android:inputType="textPersonName"
+        android:minHeight="48dp"
+        android:textColorHint="#00838F"
+        app:layout_constraintBottom_toBottomOf="@+id/textView_name"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_weight="1.6"
+        app:layout_constraintStart_toEndOf="@+id/textView_name"
+        app:layout_constraintTop_toTopOf="@+id/textView_name"
+        app:layout_constraintVertical_chainStyle="spread" />
+
+    <EditText
+        android:id="@+id/editText_birth"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:autofillHints=""
+        android:hint="@string/_15_12_2002"
+        android:inputType="date"
+        android:minHeight="48dp"
+        android:textColorHint="#00838F"
+        app:layout_constraintEnd_toEndOf="@+id/editText_name"
+        app:layout_constraintHorizontal_weight="1.6"
+        app:layout_constraintStart_toEndOf="@+id/textView_birth"
+        app:layout_constraintTop_toBottomOf="@+id/editText_name"
+        app:layout_constraintVertical_chainStyle="spread" />
+
+    <EditText
+        android:id="@+id/editText_university"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:autofillHints=""
+        android:hint="@string/ictu"
+        android:inputType="textPersonName"
+        android:minHeight="48dp"
+        android:textColorHint="#00838F"
+        app:layout_constraintEnd_toEndOf="@+id/editText_name"
+        app:layout_constraintHorizontal_weight="1.6"
+        app:layout_constraintStart_toEndOf="@+id/textView_university"
+        app:layout_constraintTop_toBottomOf="@+id/editText_birth"
+        app:layout_constraintVertical_chainStyle="spread" />
+
+    <RadioGroup
+        android:id="@+id/radioGroup_sex"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintStart_toStartOf="@+id/editText_name"
+        app:layout_constraintTop_toBottomOf="@+id/editText_university">
+
+        <RadioButton
+            android:id="@+id/radioButton_male"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:checked="true"
+            android:text="@string/nam"
+            android:textColor="#00838F" />
+
+        <RadioButton
+            android:id="@+id/radioButton_female"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="#00838F"
+            android:text="@string/n" />
+    </RadioGroup>
+
+    <TextView
+        android:id="@+id/textView_hobby"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:gravity="start"
+        android:text="@string/s_th_ch"
+        android:textSize="18sp"
+        app:layout_constraintEnd_toStartOf="@+id/radioGroup_sex"
+        app:layout_constraintStart_toStartOf="@+id/textView_name"
+        app:layout_constraintTop_toBottomOf="@+id/radioGroup_sex" />
+
+    <CheckBox
+        android:id="@+id/checkBox_sport"
+        android:layout_width="0dp"
+        android:layout_marginStart="30dp"
+        android:layout_height="wrap_content"
+        android:text="@string/th_thao"
+        android:checked="true"
+        app:layout_constraintEnd_toEndOf="@+id/textView_hobby"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView_hobby" />
+
+    <CheckBox
+        android:id="@+id/checkBox_travel"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:text="@string/du_l_ch"
+        app:layout_constraintEnd_toEndOf="@+id/textView_hobby"
+        app:layout_constraintStart_toStartOf="@+id/checkBox_sport"
+        app:layout_constraintTop_toBottomOf="@+id/checkBox_sport" />
+
+    <CheckBox
+        android:id="@+id/checkBox_readBook"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:text="@string/c_s_ch"
+        app:layout_constraintEnd_toEndOf="@+id/textView_hobby"
+        app:layout_constraintStart_toStartOf="@+id/checkBox_sport"
+        app:layout_constraintTop_toBottomOf="@+id/checkBox_travel" />
+
+    <Button
+        android:id="@+id/button_save"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:backgroundTint="#BDBDBD"
+        android:text="@string/nh_p_li_u_hi_n_th"
+        android:textColor="#0D47A1"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="@+id/radioGroup_sex"
+        app:layout_constraintHorizontal_weight="6"
+        app:layout_constraintStart_toStartOf="@+id/textView_name"
+        app:layout_constraintTop_toBottomOf="@+id/checkBox_readBook"
+        app:layout_constraintVertical_chainStyle="spread"
+        app:layout_constraintWidth_max="wrap" />
+
+    <Button
+        android:id="@+id/button_refill"
+        android:layout_width="0dp"
+        app:layout_constraintWidth_max="wrap"
+        android:layout_height="wrap_content"
+        android:backgroundTint="#BDBDBD"
+        android:text="@string/nh_p_l_i"
+        android:textColor="#0D47A1"
+        app:layout_constraintBottom_toBottomOf="@+id/button_save"
+        app:layout_constraintEnd_toEndOf="@+id/editText_name"
+        app:layout_constraintHorizontal_weight="4"
+        app:layout_constraintStart_toEndOf="@+id/button_save"
+        app:layout_constraintTop_toTopOf="@+id/button_save"
+        app:layout_constraintVertical_chainStyle="spread" />
+</androidx.constraintlayout.widget.ConstraintLayout>

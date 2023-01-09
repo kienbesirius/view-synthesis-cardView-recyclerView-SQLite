@@ -1,0 +1,25 @@
+<resources>
+    <string name="app_name">View Synthesis</string>
+    <string name="login">Login</string>
+    <string name="your_id">Your id</string>
+    <string name="your_password">Your Password</string>
+    <string name="save_login_account">Save login account</string>
+    <string name="student_manager">Student Manager</string>
+    <string name="my_info">Designed by BCK\nICTU\'s schoolar\nContact me: bechjkjen@gmail.com \nor (+84)979965784</string>
+    <string name="h_v_t_n">Họ và tên: </string>
+    <string name="qu_n_l_sinh_vi_n">Quản Lý Sinh Viên</string>
+    <string name="ng_y_th_ng_n_m_sinh">Ngày tháng năm sinh: </string>
+    <string name="tr_ng_h_c">Trường học: </string>
+    <string name="gi_i_t_nh">Giới Tính: </string>
+    <string name="nam">Nam</string>
+    <string name="n">Nữ</string>
+    <string name="ictu">ICTU</string>
+    <string name="_15_12_2002">15/12/2002</string>
+    <string name="b_ch_ki_n">Bế Chí Kiên</string>
+    <string name="s_th_ch">Sở thích: </string>
+    <string name="c_s_ch">Đọc Sách</string>
+    <string name="du_l_ch">Du Lịch</string>
+    <string name="th_thao">Thể Thao</string>
+    <string name="nh_p_l_i">Nhập Lại</string>
+    <string name="nh_p_li_u_hi_n_th">Nhập liệu/Hiển thị</string>
+</resources>
